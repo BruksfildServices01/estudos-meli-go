@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+section {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+input {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+button {
+  margin-right: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 4px;
+  padding: 3px 0;
+  border-bottom: 1px solid #eee;
+}

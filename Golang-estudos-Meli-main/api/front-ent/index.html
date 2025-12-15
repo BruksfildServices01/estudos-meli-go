@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Campeonato - Front simples</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Campeonato - Front simples</h1>
+
+  <section id="times-section">
+    <h2>Times</h2>
+    <form id="form-time">
+      <input type="text" id="time-nome" placeholder="Nome do time" required />
+      <input type="text" id="time-cidade" placeholder="Cidade" required />
+      <button type="submit">Criar Time</button>
+    </form>
+    <button id="btn-carregar-times">Carregar Times</button>
+    <ul id="lista-times"></ul>
+  </section>
+
+  <section id="torneios-section">
+    <h2>Torneios</h2>
+    <form id="form-torneio">
+      <input type="text" id="torneio-nome" placeholder="Nome do torneio" required />
+      <input type="number" id="torneio-ano" placeholder="Ano" required />
+      <button type="submit">Criar Torneio</button>
+    </form>
+    <button id="btn-carregar-torneios">Carregar Torneios</button>
+    <ul id="lista-torneios"></ul>
+  </section>
+
+  <section id="jogadores-section">
+    <h2>Jogadores</h2>
+    <form id="form-jogador">
+      <input type="text" id="jogador-nome" placeholder="Nome do jogador" required />
+      <input type="number" id="jogador-idade" placeholder="Idade" required />
+      <input type="number" id="jogador-time-id" placeholder="Time ID" required />
+      <button type="submit">Criar Jogador</button>
+    </form>
+    <button id="btn-carregar-jogadores">Carregar Jogadores</button>
+    <ul id="lista-jogadores"></ul>
+  </section>
+
+  <section id="torneio-times-section">
+    <h2>Times em Torneio</h2>
+    <form id="form-torneio-time">
+      <input type="number" id="tt-torneio-id" placeholder="Torneio ID" required />
+      <input type="number" id="tt-time-id" placeholder="Time ID" required />
+      <button type="submit">Adicionar Time ao Torneio</button>
+    </form>
+
+    <div>
+      <input type="number" id="tt-list-torneio-id" placeholder="Torneio ID para listar times" />
+      <button id="btn-listar-times-torneio">Listar Times do Torneio</button>
+    </div>
+
+    <ul id="lista-times-torneio"></ul>
+  </section>
+
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
